@@ -3,10 +3,12 @@ import Confetti from 'react-confetti'
 import { motion } from "framer-motion"
 import useWindowSize from 'react-use/lib/useWindowSize'
 import { wishes } from './assets/data/wishes'
+import { useState } from 'react'
 
 function App() {
   const { width, height } = useWindowSize()
 
+  const [visible, setVisible] = useState(false)
 
   document.addEventListener('mousemove', (e) => {
     const rotatingWishes = document.querySelectorAll('.rotating-wish');
@@ -25,7 +27,9 @@ function App() {
 
   });
 
-
+  setTimeout(()=>{
+    setVisible(true)
+  }, 33000)
 
   return (
 
@@ -43,7 +47,7 @@ function App() {
         <div className='p-20'>
           <img src="/dawg.png" alt="" className='w-[11rem]  mx-auto mb-6 mbfth' />
 
-          <h1 className='text-6xl font-bold font-["Macondo"] ' >It's MINISTER's bd 🎉🎉</h1>
+          <h1 className='text-6xl font-bold font-["Macondo"] ' >It's Ghislain's BDay 🎉🥳🎂</h1>
         </div>
       </motion.div>
       <p className='text-2xl px-[20vw]'>
@@ -99,7 +103,7 @@ function App() {
       <img src="/skate.png" alt="" className='w-36 fixed top-16 right-16 mbfth' />
       <img src="/bouquet.webp" alt="" className='w-64 fixed bottom-0 right-10 mbfth ' />
 
-      <div className="wishes grid grid-flow-row md:grid-cols-2 grid-cols-1 gap-4 px-24 mt-12 pb-12">
+      <div className={`wishes transition-all duration-200 ${visible?"grid":"hidden"} grid-flow-row md:grid-cols-2 grid-cols-1 gap-4 px-24 mt-12 pb-12`}>
         {wishes.map((wish, index) => (
           <div key={index} className={`wishDiv shadow-md bg-white/10 rounded-xl backdrop-blur-lg p-2 border border-white/10 h-auto`}>
             <div className="">

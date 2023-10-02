@@ -1,5 +1,9 @@
 export const wishes = [
     {
+        from: "@Big.dush",
+        wish: "You've leveled up another year in this game of life, and you're still rockin' it like a boss. May your day be filled with stacks of joy, barrels of laughter, and a treasure chest of memories. Keep slayin' it, gangsta! 💰💯 #BirthdayBoss"
+    },
+    {
         from: "@Luange_Divine",
         wish: "Dear Ghislain I wish a happiest bd from the  bottom of my intestines:😂😂🤗and I want u to start this year with blessings,family and love (notify me if my little sis natakwitaho😉) any ways u know u mean a lot to us  though u have silly jokes😂(don't change) soo lots of love and hugs nyne 2,kura ujya ejuru  brahhh!! and  ohh about the intestine thing it was a joke😂😂😂"
     },
