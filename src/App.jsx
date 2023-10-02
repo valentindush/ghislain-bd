@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import useWindowSize from 'react-use/lib/useWindowSize'
 import { wishes } from './assets/data/wishes'
 import { useState } from 'react'
-import inDaClub from './assets/files/club.mp3'
 
 function App() {
   const { width, height } = useWindowSize()
@@ -94,7 +93,7 @@ function App() {
           }}
         />
       </p>
-      <audio src={inDaClub} autoPlay >
+      <audio src="/club.mp3" autoPlay >
         
       </audio>
       <div className='w-[20vw] h-[40vh] bg-red-500/10 absolute left-40 top-0 blur-3xl' />
