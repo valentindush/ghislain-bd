@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'Marck Script', cursive;
+}
+
+
+
+.mbfth {
+  animation: moveBackAndForth 5s linear infinite;
+}
+
+.rotating-wish {
+  transition: transform 0.3s;
+  transform-origin: center;
+  will-change: transform; 
+  transform: rotate(5deg);
+}
+
+.rotating-wish:hover {
+  transform: rotate(2deg); /* Rotate the element slightly */
+}
+
+
+@keyframes moveBackAndForth {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.custom-cursor {
+  cursor:  url('/cur.png'),  auto;
+}
+
+
+
+
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: green #ffd8d8;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 246, 246);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  @keyframes rotateWish {
+    0% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+
+
+  .wishDiv{
+    transform: rotate(-3deg);
+    font-family: 'Architects Daughter', cursive;
+    animation: rotateWish 2s linear infinite;
+  }
+  .wishDiv span, .wishDiv{
+    font-family: 'Architects Daughter', cursive;
+  }
+  .wishDiv:hover{
+    transform: scale(0.95) rotate(-3deg);
+    transition: 0.5s
+  }
