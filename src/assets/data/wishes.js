@@ -33,7 +33,7 @@ export const wishes = [
     },
     {
         from: "@Joella",
-        wish: "Happy birthday to the one who brings sunshine into my life every day! 🎉🎂 Your presence is the greatest gift, but I hope this day brings you all the joy and love you deserve. May the year ahead be filled with laughter, unforgettable moments, and all the happiness your heart can hold. Here's to celebrating you today and every day! 🥳"
+        wish: "Happy birthday, dear friend! May your day be filled with joy and laughter, just like the happiness you bring into our lives."
     },
     {
         from: "@Hope",
